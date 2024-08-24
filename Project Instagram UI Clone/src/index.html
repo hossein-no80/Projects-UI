@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram with Tailwind CSS</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class=" sticky  top-0 border-b shadow-sm bg-white z-30">
+        <!-- Header -->
+        <div class="flex justify-between h-24  items-center mx-4 xl:max-w-6xl xl:mx-auto">
+            <!-- Left -->
+            <div class="cursor-pointer w-12 lg:hidden">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/800px-Instagram_logo_2022.svg.png"
+                    alt="instagram-logo">
+            </div>
+            <div class="cursor-pointer w-28 hidden lg:inline-grid">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/800px-Instagram_logo.svg.png"
+                    alt="instagram-logo">
+            </div>
+
+            <!-- Middle -->
+            <div class="relative mt-1">
+                <div class="absolute top-2.5 left-2  ">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-5 text-gray-500">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                </div>
+                <input placeholder="Search"
+                    class="pl-10 rounded-md focus:ring-black focus:border-black bg-gray-50 border-gray-500 text.sm"
+                    type="search">
+            </div>
+
+            <!-- Right -->
+            <div class=" flex space-x-4 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                    class="size-7 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out hidden md:inline-flex">
+                    <path fill-rule="evenodd"
+                        d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z"
+                        clip-rule="evenodd" />
+                </svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-7 cursor-pointer hover:scale-125 transition-transform duration-200 ease-out">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <img class="h-11 rounded-full cursor-pointer" src="https://i.pravatar.cc/150?img=19" alt="">
+
+            </div>
+        </div>
+    </div>
+    <!-- Feed -->
+
+    <main class="grid grid-cols-1 md:grid-cols-3 mx-auto md:max-w-6xl">
+        <section class="md:col-span-2 ">
+            <!-- Left -->
+
+            <!-- Stories -->
+            <div class="flex space-x-2 p-6 border overflow-x-scroll scrollbar-none rounded-sm">
+                <div class="cursor-pointer relative">
+                    <img src="https://i.pravatar.cc/150?img=19"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor"
+                        class="absolute left-10 top-10 size-6 bg-blue-500 rounded-full text-white">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                    </svg>
+                    <p class=" text-xs w-16 truncate text-center">sahar</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=1"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Guichave</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=2"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Nessirs</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=3"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Feem1989</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=4"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Smill1956</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=5"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Bluddre01</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=6"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Cotne1969</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=7"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Leighte1989</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=8"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Whistract</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=9"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Hisaim</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=10"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Whats1964</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=11"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Fliptatheaus</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=12"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Oron1994</p>
+                </div>
+
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=13"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Anin1962</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=14"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Thichilvery</p>
+                </div>
+                <div class="cursor-pointer">
+                    <img src="https://i.pravatar.cc/150?img=15"
+                        class="h-16 w-16 rounded-full p-[1.5px] border-2 border-red-500 hover:scale-110 transition-transform duration-200 ease-out">
+                    <p class=" text-xs w-16 truncate text-center">Logetc</p>
+                </div>
+            </div>
+
+            <!-- Posts -->
+            <div class=" border my-7 bg-white rounded-md">
+                <!-- Posts Headers -->
+                <div class="flex items-center p-5 ">
+                    <img class="h-14 rounded-full border p-1 mr-3 cursor-pointer" src="https://i.pravatar.cc/150?img=19"
+                        alt="user-image">
+                    <p class="flex-1 cursor-pointer">codewithsahar</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </div>
+                <!-- Posts Image -->
+                <img class="w-full object-cover "
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5ZJVlov_JoiTi4y4Z5WgAdKlgZu1tNRQ9Iw&s"
+                    alt="">
+                <!-- Posts buttons -->
+                <div class="flex justify-between px-4 pt-4">
+                    <div class="flex space-x-6 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="0" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                        </svg>
+                    </div>
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                        </svg>
+
+                    </div>
+                </div>
+                <!-- Posts Comments -->
+                <!-- Caption -->
+                <p class="p-5 truncate">
+                    <span class="font-bold mr-2">Codewithhossein</span>
+                    nice!
+                </p>
+                <!-- comments -->
+                <div class="mx-10 max-h-24 overflow-y-scroll scrollbar-none">
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=10"
+                            alt="comment-image">
+                        <p class="font-semibold ">reyhan.123</p>
+                        <p class="flex-1 truncate">nice</p>
+                        <p> 8 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=11"
+                            alt="comment-image">
+                        <p class="font-semibold ">hamid_hamidi</p>
+                        <p class="flex-1 truncate">greet</p>
+                        <p>3 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=12"
+                            alt="comment-image">
+                        <p class="font-semibold ">ahmad</p>
+                        <p class="flex-1 truncate">amazing</p>
+                        <p>3 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=13"
+                            alt="comment-image">
+                        <p class="font-semibold ">sajad</p>
+                        <p class="flex-1 truncate">nice pic.</p>
+                        <p>2 days ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=14"
+                            alt="comment-image">
+                        <p class="font-semibold ">hossein</p>
+                        <p class="flex-1 truncate">good</p>
+                        <p>1 hours ago </p>
+                    </div>
+                </div>
+                <!-- Post input box-->
+                <form class="flex items-center p-4" action="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                    </svg>
+                    <input class="border-none flex-1 focus:ring-0" type="text" placeholder="Enter your comment">
+                    <button class="font-bold text-blue-400">Post</button>
+
+                </form>
+            </div>
+            <div class=" border my-7 bg-white rounded-md">
+                <!-- Posts Headers -->
+                <div class="flex items-center p-5 ">
+                    <img class="h-14 rounded-full border p-1 mr-3 cursor-pointer" src="https://i.pravatar.cc/150?img=20"
+                        alt="user-image">
+                    <p class="flex-1 cursor-pointer">codewithsahar</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </div>
+                <!-- Posts Image -->
+                <img class="w-full object-cover "
+                    src="data:image/jpeg;base64,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"
+                    alt="">
+                <!-- Posts buttons -->
+                <div class="flex justify-between px-4 pt-4">
+                    <div class="flex space-x-6 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="0" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn ">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                        </svg>
+                    </div>
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                        </svg>
+
+                    </div>
+                </div>
+                <!-- Posts Comments -->
+                <!-- Caption -->
+
+                <p class=" p-5 truncate">
+                    <span>23 liks</span>
+                    <span class=" font-bold mr-2">Codewithhossein</span>
+                    nice!
+                </p>
+
+                <!-- comments -->
+                <div class="mx-10 max-h-24 overflow-y-scroll scrollbar-none">
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=10"
+                            alt="comment-image">
+                        <p class="font-semibold ">reyhan.123</p>
+                        <p class="flex-1 truncate">nice</p>
+                        <p> 8 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=11"
+                            alt="comment-image">
+                        <p class="font-semibold ">hamid_hamidi</p>
+                        <p class="flex-1 truncate">greet</p>
+                        <p>3 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=12"
+                            alt="comment-image">
+                        <p class="font-semibold ">ahmad</p>
+                        <p class="flex-1 truncate">amazing</p>
+                        <p>3 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=13"
+                            alt="comment-image">
+                        <p class="font-semibold ">sajad</p>
+                        <p class="flex-1 truncate">nice pic.</p>
+                        <p>2 days ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=14"
+                            alt="comment-image">
+                        <p class="font-semibold ">hossein</p>
+                        <p class="flex-1 truncate">good</p>
+                        <p>1 hours ago </p>
+                    </div>
+                </div>
+                <!-- Post input box-->
+                <form class="flex items-center p-4" action="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                    </svg>
+                    <input class="border-none flex-1 focus:ring-0" type="text" placeholder="Enter your comment">
+                    <button class="font-bold text-blue-400">Post</button>
+
+                </form>
+            </div>
+            <div class=" border my-7 bg-white rounded-md">
+                <!-- Posts Headers -->
+                <div class="flex items-center p-5 ">
+                    <img class="h-14 rounded-full border p-1 mr-3 cursor-pointer" src="https://i.pravatar.cc/150?img=21"
+                        alt="user-image">
+                    <p class="flex-1 cursor-pointer">codewithsahar</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </div>
+                <!-- Posts Image -->
+                <img class="w-full object-cover "
+                    src="data:image/jpeg;base64,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"
+                    alt="">
+                <!-- Posts buttons -->
+                <div class="flex justify-between px-4 pt-4">
+                    <div class="flex space-x-6 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                        </svg>
+                    </div>
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                        </svg>
+
+                    </div>
+                </div>
+                <!-- Posts Comments -->
+                <!-- Caption -->
+                <p class="p-5 truncate">
+                    <span class="font-bold mr-2">Codewithhossein</span>
+                    nice!
+                </p>
+                <!-- comments -->
+                <div class="mx-10 max-h-24 overflow-y-scroll scrollbar-none">
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=10"
+                            alt="comment-image">
+                        <p class="font-semibold ">reyhan.123</p>
+                        <p class="flex-1 truncate">nice</p>
+                        <p> 8 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=11"
+                            alt="comment-image">
+                        <p class="font-semibold ">hamid_hamidi</p>
+                        <p class="flex-1 truncate">greet</p>
+                        <p>3 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=12"
+                            alt="comment-image">
+                        <p class="font-semibold ">ahmad</p>
+                        <p class="flex-1 truncate">amazing</p>
+                        <p>3 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=13"
+                            alt="comment-image">
+                        <p class="font-semibold ">sajad</p>
+                        <p class="flex-1 truncate">nice pic.</p>
+                        <p>2 days ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=14"
+                            alt="comment-image">
+                        <p class="font-semibold ">hossein</p>
+                        <p class="flex-1 truncate">good</p>
+                        <p>1 hours ago </p>
+                    </div>
+                </div>
+                <!-- Post input box-->
+                <form class="flex items-center p-4" action="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                    </svg>
+                    <input class="border-none flex-1 focus:ring-0" type="text" placeholder="Enter your comment">
+                    <button class="font-bold text-blue-400">Post</button>
+
+                </form>
+            </div>
+            <div class=" border my-7 bg-white rounded-md">
+                <!-- Posts Headers -->
+                <div class="flex items-center p-5 ">
+                    <img class="h-14 rounded-full border p-1 mr-3 cursor-pointer" src="https://i.pravatar.cc/150?img=25"
+                        alt="user-image">
+                    <p class="flex-1 cursor-pointer">codewithsahar</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6 cursor-pointer">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                    </svg>
+                </div>
+                <!-- Posts Image -->
+                <img class="w-full object-cover "
+                    src="data:image/jpeg;base64,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"
+                    alt="">
+                <!-- Posts buttons -->
+                <div class="flex justify-between px-4 pt-4">
+                    <div class="flex space-x-6 ">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 0 1-.923 1.785A5.969 5.969 0 0 0 6 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337Z" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                        </svg>
+                    </div>
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="btn">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" />
+                        </svg>
+
+                    </div>
+                </div>
+                <!-- Posts Comments -->
+                <!-- Caption -->
+                <p class="p-5 truncate">
+                    <span class="font-bold mr-2">Codewithhossein</span>
+                    nice!
+                </p>
+                <!-- comments -->
+                <div class="mx-10 max-h-24 overflow-y-scroll scrollbar-none">
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=10"
+                            alt="comment-image">
+                        <p class="font-semibold ">reyhan.123</p>
+                        <p class="flex-1 truncate">nice</p>
+                        <p> 8 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=11"
+                            alt="comment-image">
+                        <p class="font-semibold ">hamid_hamidi</p>
+                        <p class="flex-1 truncate">greet</p>
+                        <p>3 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=12"
+                            alt="comment-image">
+                        <p class="font-semibold ">ahmad</p>
+                        <p class="flex-1 truncate">amazing</p>
+                        <p>3 hours ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=13"
+                            alt="comment-image">
+                        <p class="font-semibold ">sajad</p>
+                        <p class="flex-1 truncate">nice pic.</p>
+                        <p>2 days ago </p>
+                    </div>
+                    <div class=" flex items-center space-x-2 mb-2 flex-1">
+                        <img class="h-7 rounded-full object-cover" src="https://i.pravatar.cc/150?img=14"
+                            alt="comment-image">
+                        <p class="font-semibold ">hossein</p>
+                        <p class="flex-1 truncate">good</p>
+                        <p>1 hours ago </p>
+                    </div>
+                </div>
+                <!-- Post input box-->
+                <form class="flex items-center p-4" action="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                    </svg>
+                    <input class="border-none flex-1 focus:ring-0" type="text" placeholder="Enter your comment">
+                    <button class="font-bold text-blue-400">Post</button>
+
+                </form>
+            </div>
+        </section>
+        <section class="hidden md:inline-grid md:col-span-1">
+            <!-- Right -->
+            <div class="fixed w-[380px]">
+                <!-- Mini Profile -->
+                <div class="flex items-center justify-between mt-14 ml-10">
+                    <img src="https://i.pravatar.cc/150?img=19" alt="user-image"
+                        class="h-16 rounded-full border p-[2px] ">
+                    <div class=" flex-1 ml-4">
+                        <h2 class="font-bold">codewithhossein</h2>
+                        <h3 class="text-gray-500">welcome to instagram</h3>
+                    </div>
+                    <button class="text-blue-400 font-bold">Sign out </button>
+                </div>
+
+                <!-- Suggestions -->
+
+                <div class="mt-4 ml-10">
+                    <div class="flex justify-between mb-5 text-sm">
+                        <h3 class="font-bold text-gray-400">Suggestions for you</h3>
+                        <button class="text-gray-600 font-semibold ">See all</button>
+                    </div>
+                </div>
+                <div class=" flex items-center justify-between mt-3 ml-8">
+                    <img class="h-12 rounded-full border p-[2px] ml-3" src="https://i.pravatar.cc/150?img=31" alt="">
+                    <div class="flex-1 ml-4">
+                        <h2 class="font-semibold text-sm">zahra-zzhw</h2>
+                        <h3 class="text-sm text-gray-400">Manager</h3>
+                    </div>
+                    <button class="font-semibold text-blue-400">Follow</button>
+                </div>
+                <div class=" flex items-center justify-between mt-3 ml-8">
+                    <img class="h-12 rounded-full border p-[2px] ml-3" src="https://i.pravatar.cc/150?img=36" alt="">
+                    <div class="flex-1 ml-4">
+                        <h2 class="font-semibold text-sm">pari_234gh</h2>
+                        <h3 class="text-sm text-gray-400">Manager</h3>
+                    </div>
+                    <button class="font-semibold text-blue-400">Follow</button>
+                </div>
+                <div class=" flex items-center justify-between mt-3 ml-8">
+                    <img class="h-12 rounded-full border p-[2px] ml-3" src="https://i.pravatar.cc/150?img=33" alt="">
+                    <div class="flex-1 ml-4">
+                        <h2 class="font-semibold text-sm">danial432</h2>
+                        <h3 class="text-sm text-gray-400">Engineer</h3>
+                    </div>
+                    <button class="font-semibold text-blue-400">Follow</button>
+                </div>
+                <div class=" flex items-center justify-between mt-3 ml-8">
+                    <img class="h-12 rounded-full border p-[2px] ml-3" src="https://i.pravatar.cc/150?img=40" alt="">
+                    <div class="flex-1 ml-4">
+                        <h2 class="font-semibold text-sm">alexa_l34</h2>
+                        <h3 class="text-sm text-gray-400">Doctor</h3>
+                    </div>
+                    <button class="font-semibold text-blue-400">Follow</button>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
